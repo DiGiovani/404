@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="Scarecrow.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inconsolata:wght@700&family=Montserrat&display=swap" rel="stylesheet">
+
+    <title>404 error</title>
+
+    <style>
+
+      body {
+
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+
+        padding: 10px 100px;
+        justify-content: space-between;
+      }
+
+      h1 {
+        margin: 0;
+        font-family: 'Inconsolata', monospace;
+        font-size: 24px;
+        line-height: 25px;
+      }
+
+      div#content {
+        
+        /* margin: 13em 10rem; */
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        align-items: center;
+        justify-content: center;
+
+      }
+
+      div#text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      img{
+        max-width: 540px;
+      }
+
+      h2, p, a {
+        font-family: 'Space Mono', sans-serif;
+        letter-spacing: -0.035em;
+      }
+
+      h2 {
+        font-size: 64px;
+        line-height: 95px;
+        margin: 0px;
+      }
+
+      p {
+        font-size: 24px;
+        line-height: 36px;
+        margin: 36px 0px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      a.button {
+        display: block;
+        color: #fff;
+        background-color: #333333;
+        width: 200px;
+        padding: 35px 0 35px 60px;  
+        transition: 0.2s;  
+        margin:  26px 0px;  
+        font-size: 14px; 
+        border-radius: 3px;
+      }
+
+      a.button:hover {
+        background-color: #111;
+      }
+      
+      footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .footer {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+
+        color: #333;
+      }
+
+      .footer:hover {
+        color: #111;
+      }
+
+      @media (max-width: 1150px ) and (min-width: 880px) {
+        h2 {
+          font-size: 58px;
+        }
+        p {
+          font-size: 20px;
+        }
+      }
+
+      @media (max-width: 880px)  {
+        body {
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+        }
+
+        img {
+          max-width: 450px;
+          width: 100%;
+          min-width: 250px;
+        }
+
+        div#content {
+          display: flex;
+          flex-direction: column;
+        }
+
+        h2 {
+          font-size: 48px;
+          line-height: 71px;
+        }
+
+        p {
+          font-size: 18px;
+          line-height: 27px;
+        }
+
+        div#text {
+          justify-content: space-between;
+          
+        }
+
+      
+      } 
+
+    </style>
+  </head>
+  <body>
+    <h1>404 NOT FOUND</h1>
+    <div id="content">
+      <img src="./Scarecrow.png" alt="Scarecrow with a sign written 404">
+      <div id="text">
+        <h2>I have bad news for you</h2>
+        <p>The page you are looking for might be removed or is temporarily unavailable.</p>
+        <a class="button" href="#">BACK TO HOMEPAGE</a>
+      </div>
+    </div>
+    <footer> 
+        <p class="footer">
+          <a class="footer" href="https://linkedin.com/in/alexsandrodgjr" target="_blank">Alexsandro Di Giovani Júnior</a> @ <a class="footer" href="https://devchallenges.io" target="_blank">DevChallenges.io</a>
+        </p>
+    </footer>
+  </body>
+</html>
